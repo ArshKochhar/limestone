@@ -16,6 +16,10 @@ html, body {
 .success1{
    color:#ed7c31;
 }
+.pitch-text{
+color:#ffffff;
+font-size: 100;
+}
 .success2{
    color:#000000;
 }
@@ -116,6 +120,21 @@ button, a, a.btn,
    display: table;
 }
 
+.team-dark {
+   background-image: url('../img/group.jpg');
+   filter: blur(0.5px);
+   position: fixed;
+   height: 120%;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   display: table;
+}
+
+
 .alumni{
    background-image: url('../img/success1.jpg');
    filter: blur(1px);
@@ -129,6 +148,22 @@ button, a, a.btn,
    will-change: transform;
    display: table;
 }
+
+
+.pitches{
+   background-image: url('../img/goodes.jpg');
+   filter: blur(2px);
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-size:cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   display: table;
+}
+
 
 
 
@@ -225,7 +260,7 @@ h3.heading {
 .heading-underline {
    width: 3rem;
    height: .2rem;
-   background-color: #1EBBA3;
+   background-color: #ed7c31;
    margin: 0 auto 2rem;
 }
 .feature span {
@@ -285,6 +320,18 @@ h3.heading {
    background-color: rgba(0, 0, 0, .7);
    padding: 7rem 0;
    z-index: 1000;
+}
+
+.medium-dark {
+   background-color: rgb(235, 166, 77);
+   padding: 3rem 0;
+   z-index: 800;
+}
+
+.medium-light {
+   background-color: rgb(247, 216, 176);
+   padding: 3rem 0;
+   z-index: 800;
 }
 
 /*============= PORTFOLIO SECTION =============*/

@@ -229,7 +229,7 @@ button, a, a.btn,
 .btn-trans{
 opacity: .8;
 height:90px;
-width:400px;
+width: 350px;
 padding: 1.5rem 1.1rem;
 }
 
@@ -253,6 +253,10 @@ h3.heading {
 
 .mission{
    background-color: #c2bfba;
+}
+
+.structure p{
+   padding: 1.7rem 1.1rem;
 }
 
 .alum-text h1{

@@ -227,7 +227,7 @@ button, a, a.btn,
 }
 
 .btn-trans{
-opacity: .8;
+opacity: 0.95;
 height:90px;
 width: 350px;
 padding: 1.5rem 1.1rem;
@@ -416,6 +416,11 @@ h3.heading {
    left: 0;
    display: table;
 }
+.centre-card{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 .light {
    background-color: rgba(255, 255, 255, .75);
    padding: 5rem 0;
@@ -438,7 +443,7 @@ h3.heading {
 }
 button.owl-dot.active span,
 button.owl-dot:hover span {
-   background: #1EBBA3!important;
+   background: #f07f07!important;
 }
 ul.social {
    list-style: none;
@@ -476,10 +481,10 @@ ul.social li a:hover {
 }
 blockquote .svg-inline--fa {
    margin: 1rem;
-   color: #1EBBA3;
+   color: #eb9c09;
 }
 .clients-hr {
-   border-top: .1rem solid #1EBBA3;
+   border-top: .1rem solid #eb9c09;
 }
 
 /*============= CONTACT SECTION =============*/

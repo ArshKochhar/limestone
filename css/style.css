@@ -52,6 +52,9 @@ font-size: 100;
 .navbar-brand img {
    height: 4rem;
 }
+.navbarteam{
+   background-color: #ccc8bc;
+}
 .navbar {
    padding: 0rem ;
    text-transform: uppercase;
@@ -60,6 +63,7 @@ font-size: 100;
    font-size: .9rem;
    transition: background-color .5s ease;
 }
+
 .navbar-nav li {
    padding-right: .8rem;
 }
@@ -78,7 +82,7 @@ font-size: 100;
 .navbar.solid,
 .navbar.solid-toggle {
    background: rgb(127, 127, 127)!important;
-   transition: background-color 2s ease;
+   transition: background-color 0.5s ease;
 }
 
 /*-- Remove Button Outline --*/
@@ -420,6 +424,56 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
+  
+}
+.centre-card-diff{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 200px;
+}
+.centre-card-ss{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 140px;
+}
+.centre-card-cy{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 130px;
+}
+.centre-card-i{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 140px;
+}
+
+.centre-card-nr{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 130px;
+}
+.centre-card-c{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 140px;
+}
+.centre-card-tmt{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 130px;
+}
+.centre-card-ops{
+   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 130px;
 }
 .light {
    background-color: rgba(255, 255, 255, .75);
@@ -431,12 +485,18 @@ h3.heading {
 }
 .card {
    height: 100%;
+   width: 75%;
    border-radius: 0;
    text-align: center;
    margin: 0 1rem;
    border: .1rem solid rgba(0, 0, 0, .075);
    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
    transition: transform .4s ease;
+}
+
+.containerone{
+   margin-top : -50px;
+
 }
 .card:hover {
    transform: scale(.95);

@@ -20,6 +20,14 @@ $('.navbar-toggler').click(function () { //when navbar-toggler is clicked
     }
 });
 
+/*========== ADD SOLID CLASS TO NAVBAR WHEN TOGGLED ==========*/
+$('.navbarteam').click(function () { //when navbar-toggler is clicked
+    if ($(window).scrollTop()) { //if window scrolled 300px or less from top
+    $("nav.navbar").toggleClass("solid-toggle"); //add the solid class to navbar
+    }
+});
+
+
 
 /*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK a[href^="#"] ==========*/
 $(document).on('click', 'a[href^="#"]', function (event) {

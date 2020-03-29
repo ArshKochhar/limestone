@@ -283,7 +283,7 @@ h3.heading {
    width: 3rem;
    height: .2rem;
    background-color: #ed7c31;
-   margin: 0 auto 2rem;
+   margin: 0 auto 0rem;
 }
 .feature span {
    color: #1EBBA3;
@@ -420,13 +420,20 @@ h3.heading {
    left: 0;
    display: table;
 }
+.team-size{
+   font-size: 20px;
+}
+
+.position-size{
+   font-size: 20px;
+}
 .centre-card{
    display: flex;
   justify-content: center;
   flex-direction: row;
   
 }
-.centre-card-diff{
+.centre-card-exec{
    display: flex;
   justify-content: center;
   flex-direction: row;
@@ -436,44 +443,44 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 140px;
+  margin-left: 200px;
 }
 .centre-card-cy{
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 130px;
+  margin-left: 200px;
 }
 .centre-card-i{
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 140px;
+  margin-left: 200px;
 }
 
 .centre-card-nr{
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 130px;
+  margin-left: 195px;
 }
 .centre-card-c{
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 140px;
+  margin-left: 200px;
 }
 .centre-card-tmt{
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 130px;
+  margin-left: 200px;
 }
 .centre-card-ops{
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 130px;
+  margin-left: 200px;
 }
 .light {
    background-color: rgba(255, 255, 255, .75);
@@ -492,6 +499,9 @@ h3.heading {
    border: .1rem solid rgba(0, 0, 0, .075);
    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
    transition: transform .4s ease;
+}
+.save-spacee{
+   margin-top: 10px;
 }
 
 .containerone{

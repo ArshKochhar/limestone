@@ -54,6 +54,7 @@ font-size: 100;
 }
 .navbarteam{
    background-color: #ccc8bc;
+   height: 3rem
 }
 .navbar {
    padding: 0rem ;
@@ -437,7 +438,7 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 190px;
+  margin-left: 200px;
   
 }
 .centre-card-ss{
@@ -463,7 +464,7 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 195px;
+  margin-left: 200px;
 }
 .centre-card-c{
    display: flex;
@@ -488,15 +489,16 @@ h3.heading {
    padding: 5rem 0;
    z-index: 1000;
 }
-.owl-stage {
+/*.owl-stage {
    display: flex;
-}
+}*/
+
 .card {
    height: 100%;
    width: 75%;
    border-radius: 0;
    text-align: center;
-   margin: 0 1rem;
+   margin: 0 0.5rem;
    border: .1rem solid rgba(0, 0, 0, .075);
    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
    transition: transform .4s ease;

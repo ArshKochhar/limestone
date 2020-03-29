@@ -85,6 +85,8 @@ $(document).ready(function(){ //when document(DOM) loads completely
     });
   });
 
+
+
 /*========== MEET THE Special Situations team CAROUSEL ==========*/
 $(document).ready(function(){ //when document(DOM) loads completely
     $('.owl-one').owlCarousel({ //owlCarousel settings

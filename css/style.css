@@ -437,7 +437,8 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 200px;
+  margin-left: 190px;
+  
 }
 .centre-card-ss{
    display: flex;
@@ -492,7 +493,7 @@ h3.heading {
 }
 .card {
    height: 100%;
-   width: 75%;
+   width: 80%;
    border-radius: 0;
    text-align: center;
    margin: 0 1rem;
@@ -500,8 +501,8 @@ h3.heading {
    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
    transition: transform .4s ease;
 }
-.save-spacee{
-   margin-top: 10px;
+.save-space{
+   margin-top: -20px;
 }
 
 .containerone{

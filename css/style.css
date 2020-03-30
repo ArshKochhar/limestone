@@ -438,7 +438,7 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 200px;
+  margin-left: 130px;
   
 }
 .centre-card-ss{
@@ -495,7 +495,7 @@ h3.heading {
 
 .card {
    height: 100%;
-   width: 75%;
+   width: 70%;
    border-radius: 0;
    text-align: center;
    margin: 0 0.5rem;

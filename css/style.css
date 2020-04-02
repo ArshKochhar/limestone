@@ -54,7 +54,7 @@ font-size: 100;
 }
 .navbarteam{
    background-color: #ccc8bc;
-   height: 3rem
+   height: 4rem
 }
 .navbar {
    padding: 0rem ;
@@ -495,7 +495,6 @@ h3.heading {
 
 .card {
    height: 100%;
-   width: 70%;
    border-radius: 0;
    text-align: center;
    margin: 0 0.5rem;

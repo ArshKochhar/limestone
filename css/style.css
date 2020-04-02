@@ -484,6 +484,9 @@ h3.heading {
   flex-direction: row;
   margin-left: 200px;
 }
+.centerify{
+
+}
 .light {
    background-color: rgba(255, 255, 255, .75);
    padding: 5rem 0;
@@ -501,6 +504,10 @@ h3.heading {
    border: .1rem solid rgba(0, 0, 0, .075);
    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
    transition: transform .4s ease;
+   
+}
+.card-columns {
+    column-gap: 1rem;
 }
 .save-space{
    margin-top: -20px;

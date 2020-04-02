@@ -133,6 +133,29 @@ $(document).ready(function(){ //when document(DOM) loads completely
     });
   });
 
+/*========== MEET THE Special Situations team CAROUSEL ==========*/
+$(document).ready(function(){ //when document(DOM) loads completely
+    $('#owl-twotwo').owlCarousel({ //owlCarousel settings
+        autoplay: false, //set to false to turn off autoplay and only use nav
+        autoplayHoverPause: false, //set to false to prevent pausing on hover
+        loop: false, //set to false to stop carousel after all slides shown
+        autoplayTimeout: 8000, //time between transitions
+        smartSpeed: 1200, //transition speed
+        dotsSpeed: 1000, //transition speed when using dots/buttons
+        responsive : { //set number of items shown per screen width
+            0 : {
+                items: 1 //0px width and up display 1 item
+            },
+            768 : {
+                items: 2 //768px width and up display 2 items
+            },
+            992 : {
+                items: 3 //992px width and up display 3 items
+            }
+        }
+    });
+  });
+
 
 /*========== SKILLS COUNTER ==========*/
 $(document).ready(function () {

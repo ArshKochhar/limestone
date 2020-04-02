@@ -89,7 +89,7 @@ $(document).ready(function(){ //when document(DOM) loads completely
 
 /*========== MEET THE Special Situations team CAROUSEL ==========*/
 $(document).ready(function(){ //when document(DOM) loads completely
-    $('.owl-one').owlCarousel({ //owlCarousel settings
+    $('#owl-one').owlCarousel({ //owlCarousel settings
         autoplay: false, //set to false to turn off autoplay and only use nav
         autoplayHoverPause: false, //set to false to prevent pausing on hover
         loop: false, //set to false to stop carousel after all slides shown

@@ -496,6 +496,10 @@ h3.heading {
    display: flex;
 }
 
+.btn-padd{
+   padding: 7px;
+}
+
 .card {
   height: 100%;
    border-radius: 0;

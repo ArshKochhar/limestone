@@ -28,6 +28,9 @@ font-size: 100;
 .success2{
    color:#000000;
 }
+.structuretab{
+   color: #f78a40;
+}
 .success{
    color:#00k00d;
 }
@@ -406,7 +409,7 @@ h3.heading {
 /*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
 
 /*--- Team Light Background Image --*/
-/*.fixed-light {
+.fixed-light1 {
    background-image: url('../img/fixed/goodes.jpg');
    position: fixed;
    height: 100%;
@@ -420,7 +423,7 @@ h3.heading {
    top: 0;
    left: 0;
    display: table;
-}*/
+}
 .team-size{
    font-size: 20px;
 }

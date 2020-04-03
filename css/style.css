@@ -41,6 +41,10 @@ font-size: 100;
 .teamcolor{
    color:#ffffff;
 }
+.btn-size{
+   padding: 0.2rem 0.2rem;
+
+}
 
 /*--- Nav Scrolling Offset --*/
 .offset:before {

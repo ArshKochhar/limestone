@@ -517,6 +517,17 @@ h3.heading {
    transition: transform .4s ease;
 
 }
+.cardbig {
+  height: 100%;
+  width:110%;
+   border-radius: 0;
+   text-align: center;
+   margin: 0 1rem;
+   border: .1rem solid rgba(0, 0, 0, .075);
+   box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+   transition: transform .4s ease;
+
+}
 .divider{
     width:5px;
     height:auto;

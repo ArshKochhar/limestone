@@ -357,17 +357,17 @@ h3.heading {
    z-index: 800;
 }
 
-/*============= PORTFOLIO SECTION =============*/
+/*============= alumni placement SECTION =============*/
 
-.portfolio-item img:hover {
-   transform: scale(1.2);
+/*.portfolio-item img:hover {
+   transform: scale(1);
    cursor: zoom-in;
    padding: 1.6rem;
    transition: transform .7s ease;
 }
 .portfolio-item img {
    transition: transform .4s ease;
-}
+}*/
 
 /*============= PRICING SECTION =============*/
 

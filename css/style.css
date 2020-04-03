@@ -38,6 +38,10 @@ font-size: 100;
    color:#000000;
 }
 
+.teamcolor{
+   color:#ffffff;
+}
+
 /*--- Nav Scrolling Offset --*/
 .offset:before {
    content: "";

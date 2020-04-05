@@ -46,6 +46,10 @@ font-size: 100;
 
 }
 
+.inc-space{
+   margin-top: 4.5px;
+}
+
 /*--- Nav Scrolling Offset --*/
 .offset:before {
    content: "";

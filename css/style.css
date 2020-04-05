@@ -60,8 +60,11 @@ font-size: 100;
 }
 
 /*============= NAVIGATION =============*/
+.navbar-brand1 img {
+   height: 3.7rem;
+}
 .navbar-brand img {
-   height: 4rem;
+   height: 3.7rem;
 }
 .navbarteam{
    background-color: #ccc8bc;

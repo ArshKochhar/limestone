@@ -785,6 +785,15 @@ a.top-scroll:hover {
    }
 }
 
+.img-section img{
+    display: block;
+}
+
+@media (max-width:640px){
+    .img-section img:first-child{
+        display:none;
+    }
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 

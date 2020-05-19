@@ -790,7 +790,7 @@ a.top-scroll:hover {
 }
 
 @media (max-width:640px){
-    .img-section img:first-child{
+    .img-section img:nth-child{
         display:none;
     }
 }

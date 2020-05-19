@@ -21,6 +21,8 @@ html, body {
 
    color:#ffffff;
  }
+
+
 .pitch-text{
 color:#ffffff;
 font-size: 100;
@@ -578,6 +580,10 @@ h3.heading {
 .save-space2{
    margin-top: -48px;
 }
+.save-space3{
+   margin-top: -17px;
+}
+
 .containerone{
    margin-top : -50px;
 

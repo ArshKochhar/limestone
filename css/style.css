@@ -272,7 +272,30 @@ width: 350px;
 padding: 1.5rem 1.1rem;
 }
 
+.btn-adv{
+opacity: 0.95;
+height:95px;
+width: 250px;
+padding: 0.8rem 1rem;
+background-color:#d9d9d9;
 
+}
+
+.vl {
+  border-left: 6px solid orange;
+  height: 300px;
+}
+
+@media (min-width: 769px) {
+      .right-border1 {
+            border-right: 3px solid orange;
+      }
+}
+
+
+.gap {
+  column-gap: 40px;
+}
 
 .btn-nuno {
    background-color: #ed7d31;
@@ -793,6 +816,22 @@ a.top-scroll:hover {
     .img-section img:nth-child{
         display:none;
     }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.small{
+   font-size: 17px;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

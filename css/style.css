@@ -812,10 +812,13 @@ a.top-scroll:hover {
     display: block;
 }
 
-@media (max-width:640px){
-    .img-section img:nth-child{
+@media (max-width:740px){
+    .img-section img:first-child{
         display:none;
     }
+}
+.wide{
+  column-width: 50vh;
 }
 
 .column {

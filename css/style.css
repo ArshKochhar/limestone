@@ -292,11 +292,13 @@ background-color:#d9d9d9;
 
 
 .sizing {
-  width: 325px;
+  width: 335px;
+  margin-right: 0px;
 }
 
 .sizing2{
-  width: 310px;
+  width: 330px;
+  margin-left: 0px;
 }
 
 .right-border1 {
@@ -304,20 +306,9 @@ background-color:#d9d9d9;
       height: 280px; 
              
     }
-#shift4{
-  margin-left: 75px;
-  margin-right: 150px;
- /* padding-right: 30px;*/
-}
-
-#shift5{
-  margin-left: 33px;
-  
-}
-
-.shift6{
-  margin-right: 150px;
-}
+/*#shift{
+  margin-right: 50px;
+}*/
 
 .gap {
   column-gap: 40px;

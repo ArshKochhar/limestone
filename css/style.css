@@ -281,6 +281,15 @@ background-color:#d9d9d9;
 
 }
 
+.textbox{
+  opacity: 0.95;
+height:95px;
+width: 310px;
+padding: 0.8rem 1rem;
+background-color:#d9d9d9;
+
+}
+
 
 #proportion1{
   margin-left: 60px;

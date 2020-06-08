@@ -33,6 +33,11 @@ font-size: 100;
 .structuretab{
    color: #f78a40;
 }
+.titles{
+   color: #f78a40;
+   font-size: 35px;
+   font-weight:20;
+}
 .success{
    color:#00k00d;
 }

@@ -851,7 +851,17 @@ a.top-scroll:hover {
     .img-section img:first-child{
         display:none;
     }
+
+.title-section div{
+    display: block;
 }
+
+@media (max-width:740px){
+    .title-section div:first-child{
+        display:none;
+    }
+
+
 .tabletext{
    display: block;
 }

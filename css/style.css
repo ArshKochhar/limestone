@@ -851,7 +851,7 @@ a.top-scroll:hover {
 .img-section img{
     display: block;
 }
-
+/* Some of these seem broken? */
 @media (max-width:740px){
     .img-section img:first-child{
         display:none;

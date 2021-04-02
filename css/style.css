@@ -94,7 +94,6 @@ font-size: 100;
    color: white;
    padding-top: .2rem;
 }
-.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
    color: #a6a6a6;
 }

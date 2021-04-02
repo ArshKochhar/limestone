@@ -17,7 +17,7 @@ html, body {
    color:#ed7c31;
 }
 
-.limestone h1 { 
+.limestone h1 {
 
    color:#ffffff;
  }
@@ -283,7 +283,10 @@ height:95px;
 width: 250px;
 padding: 0.8rem 1rem;
 background-color:#d9d9d9;
+}
 
+.btn-msg{
+   margin-left: 0;
 }
 
 .textbox{
@@ -326,8 +329,8 @@ background-color:#d9d9d9;
 
 .right-border1 {
       border-right: 2px solid orange;
-      height: 280px; 
-             
+      height: 280px;
+
     }
 /*#shift{
   margin-right: 50px;
@@ -450,7 +453,7 @@ h3.heading {
 
 .medium-light {
    background-color: r#ffffff;
- 
+
    z-index: 800;
 }
 
@@ -529,14 +532,14 @@ h3.heading {
    display: flex;
   justify-content: center;
   flex-direction: row;
-  
+
 }
 .centre-card-exec{
    display: flex;
   justify-content: center;
   flex-direction: row;
   margin-left: 130px;
-  
+
 }
 .centre-card-ss{
    display: flex;
@@ -870,7 +873,7 @@ a.top-scroll:hover {
 .tabletext{
    display: block;
 }
-@media (max-width: 1240px) 
+@media (max-width: 1240px)
 {
     .tabletext
     {

@@ -16,13 +16,11 @@
     <link rel="stylesheet" href="css/plugins.css">
     <!-- Google Fonts https://fonts.google.com/ -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <!-- Animate.css https://cdnjs.com/libraries/animate.css/
-        https://daneden.github.io/animate.css/ -->
+    <!-- Animate.css https://cdnjs.com/libraries/animate.css/ GitHub: https://daneden.github.io/animate.css/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
-    <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
-        http://owlcarousel2.github.io/OwlCarousel2/ -->
+    <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2 GitHub: http://owlcarousel2.github.io/OwlCarousel2/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -46,43 +44,25 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top navbarteam">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"><img src="img/lime.png" alt=""></a>
+                <a href="index.html" class="navbar-brand"><img src="img/lime.png" alt=""></img></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="index.html#aboutus" class="nav-link"><span class="success2">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="alumni.html" class="nav-link"><span class="success2">Alumni Placements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pitches.html" class="nav-link"><span class="success2">Pitches & Reports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="team.html" class="nav-link"><span class="success2">Team</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="advisory.html" class="nav-link"><span class="success2">Oversight</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="events.html" class="nav-link"><span class="success2">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="education.html" class="nav-link"><span class="success2">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="hiring.html" class="nav-link"><span class="success2">Hiring</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li> -->
-                    </ul>
+                    <script type="module">
+                        import { html, render } from 'https://unpkg.com/htm/preact/standalone.module.js'
+                        const NavItem = (href, text) => html`<li class="nav-item"><a href=${href} class="nav-link"><span class="success2">${text}</span></a></li>`
+                        const NavList = () => html`<ul class="navbar-nav ml-auto" id="navbarList">${[
+                            NavItem('index.html#aboutus', 'About Us'),
+                            NavItem('alumni.html', 'Alumni Placements'),
+                            NavItem('pitches.html', 'Pitches & Reports'),
+                            NavItem('team.html', 'Team'),
+                            NavItem('events.html', 'Events'),
+                            NavItem('education.html', 'Education'),
+                            NavItem('hiring.html', 'Hiring')].map(item => item)}</ul>`
+                        render(html`<${NavList}/>`, document.getElementById('navbarResponsive'))
+                    </script>
                 </div>
-
             </div>
         </nav>
         <!-- End Navigation -->
@@ -119,68 +99,41 @@
                             data-animation="" data-delay="1s"><span class="success2">Operations</a><br><br>
                     </div>
 
-                    <div class="container save-space">
-                        <div class="os-animation" data-animation="fadeInUp">
-                            <div id="team-carousel" class="owl-carousel owl-theme">
-
-                                <div class="card">
-                                    <img src="img/team/officers/sim.jpg" alt="" class="card-img-top rounded-0">
+                    <div class="container save-space" id="container">
+                        <script type="module">
+                            import { html, render } from 'https://unpkg.com/htm/preact/standalone.module.js'
+                            const MemberCard = (memberPicture, memberName, memberTitle, memberBio, memberLinkedIn) => html`
+                            <div class="card">
+                                <img src=${memberPicture} alt="Picture of ${memberName}" class="card-img-top rounded-0"></img>
                                     <div class="card-body">
-                                        <h4 class="font-weight-bold">Simone Aria</h4>
-                                        <h5 class="text-nuno">Chief Executive Offcier</h5>
-                                        <p class="border-top border-bottom py-3 my-3">Simone is entering her fourth year
-                                            of the Queen’s Commerce program and currently serves as the Chief Executive
-                                            Officer for Limestone Capital. Previously, she served as a Portfolio Manager
-                                            and Analyst in the Financial Institutions Group.</p>
+                                        <h4 class="font-weight-bold">${memberName}</h4>
+                                        <h5 class="text-nuno">${memberTitle}</h5>
+                                        <p class="border-top border-bottom py-4 my-3">${memberBio}</p>
                                         <ul class="social">
-                                            <li><a href="https://www.linkedin.com/in/simone8aria/" target="blank"><i
-                                                        class="fas fa-book"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/simone8aria/" target="blank"><i
-                                                        class="fab fa-linkedin"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/${memberLinkedIn}/" target="blank"><i class="fas fa-book"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/${memberLinkedIn}/" target="blank"><i class="fab fa-linkedin"></i></a></li>
                                         </ul>
                                     </div>
-                                </div> <!-- End Card -->
-
-                                <div class="card">
-                                    <img src="img/team/officers/mj.jpg" alt="" class="card-img-top rounded-0">
-                                    <div class="card-body">
-                                        <h4 class="font-weight-bold">Manoj Anandan</h4>
-                                        <h5 class="text-nuno">Chief Investment Officer</h5>
-                                        <p class="border-top border-bottom py-3 my-3">Manoj is entering his fourth year
-                                            of the Queen’s Commerce program, and currently serves as the Chief
-                                            Investment Officer for Limestone Capital. Previously, he served as a
-                                            Portfolio Manager and Analyst in the Financial Institutions Group.</p>
-                                        <ul class="social">
-                                            <li><a href="https://www.linkedin.com/in/manoj-anandan-2783aa148/"
-                                                    target="blank"><i class="fas fa-book"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/manoj-anandan-2783aa148/"
-                                                    target="blank"><i class="fab fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- End Card -->
-
-                                <div class="card">
-                                    <img src="img/team/officers/kyle.jpg" alt="" class="card-img-top rounded-0">
-                                    <div class="card-body">
-                                        <h4 class="font-weight-bold">Kyle Johnston</h4>
-                                        <h5 class="text-nuno">Chief Strategy Officer</h5>
-                                        <p class="border-top border-bottom py-4 my-3">Kyle is entering his fourth year
-                                            of the Queen’s Commerce program, and currently serves as the Chief Strategy
-                                            Officer for Limestone Capital. Previously, he also served as a Portfolio
-                                            Manager and Analyst in the Consumers Group.</p>
-                                        <ul class="social">
-                                            <li><a href="https://www.linkedin.com/in/kylejjohnston/" target="blank"><i
-                                                        class="fas fa-book"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/kylejjohnston/" target="blank"><i
-                                                        class="fab fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- End Card -->
-
-
-
-                            </div> <!-- End Team Carousel -->
-                        </div> <!-- End Animation -->
+                            </div>`
+                            function Container() {
+                                const card1 = MemberCard('img/team/officers/sim.jpg', 'Simone Aria', 'Chief Executive Offcier', `Simone is entering her fourth year
+                                of the Queen’s Commerce program and currently serves as the Chief Executive
+                                Officer for Limestone Capital. Previously, she served as a Portfolio Manager
+                                and Analyst in the Financial Institutions Group.`, 'simone8aria');
+                                const card2 = MemberCard('img/team/officers/mj.jpg', 'Manoj Anandan', 'Chief Investment Officer', `Manoj is entering his fourth year
+                                of the Queen’s Commerce program, and currently serves as the Chief
+                                Investment Officer for Limestone Capital. Previously, he served as a
+                                Portfolio Manager and Analyst in the Financial Institutions Group.`, 'manoj-anandan-2783aa148');
+                                const card3 = MemberCard('img/team/officers/kyle.jpg', 'Kyle Johnston', 'Chief Strategy Officer', `Kyle is entering his fourth year
+                                of the Queen’s Commerce program, and currently serves as the Chief Strategy
+                                Officer for Limestone Capital. Previously, he also served as a Portfolio
+                                Manager and Analyst in the Consumers Group.`, 'kylejjohnston');
+                                return html`
+                            <div class="os-animation" data-animation="fadeInUp">
+                                <div id="team-carousel" class="owl-carousel owl-theme">${card1} ${card2} ${card3}</div>
+                            </div>`}
+                            render(html`<${Container}/>`, document.getElementById('container'))
+                        </script>
                     </div><!-- End Container -->
 
                 </div> <!-- End Row -->
@@ -204,25 +157,20 @@
 
         <!-- Plugins.js -->
         <script src="js/plugins.js"></script>
-        <!-- Waypoints https://cdnjs.com/libraries/waypoints
-        https://github.com/imakewebthings/waypoints -->
+        <!-- Waypoints https://cdnjs.com/libraries/waypoints GitHub: https://github.com/imakewebthings/waypoints -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
+        <!-- Font Awesome https://fontawesome.com/  Download: https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
         <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
-        <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+        <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  Website: https://lokeshdhakar.com/projects/lightbox2/ -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
-        <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
-        http://owlcarousel2.github.io/OwlCarousel2/ -->
+        <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2 GitHub: http://owlcarousel2.github.io/OwlCarousel2/ -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
-        https://github.com/bfintal/Counter-Up2 -->
+        <!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup GitHub: https://github.com/bfintal/Counter-Up2 -->
         <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
         <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-
         <!-- End of Script Source Files -->
-
 </body>
 
 </html>

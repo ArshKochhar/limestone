@@ -101,23 +101,12 @@
                     </div>
 
 
-                    <div class="text-center justify-content-center col-12">
-                        <a href="exec-team.html#team" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">Executive</a>
-                        <a href="cy-team.html" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">Cash Yield</a>
-                        <a href="consumer-team.html" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">Consumers</a>
-                        <a href="industrial-team.html" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">Industrials</a>
-                        <a href="nr-team.html" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">Natural Resources</a>
-                        <a href="ss-team.html#special-situation" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2"
-                            data-animation="" data-delay="1s"><span class="text-nuno">Special Situations</a>
-                        <a href="tmt-team.html" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">TMT</a>
-                        <a href="ops-team.html" class="btn btn-outline-dark btn-lg rounded-0 mr-2 mb-2 "
-                            data-animation="" data-delay="1s"><span class="text-nuno">Operations</a><br><br>
+                    <div class="text-center justify-content-center col-12" id='teamButtons'>
+                        <script type="module">
+                            import { html, render } from 'https://unpkg.com/htm/preact/standalone.module.js'
+                            import { TeamButtons } from './js/components/TeamButtons.js'
+                            render(html`<${TeamButtons}/>`, document.getElementById('teamButtons'))
+                        </script>
                     </div>
 
                     <div class="container save-space">

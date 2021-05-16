@@ -558,7 +558,6 @@ h3.heading {
   flex-direction: row;
   margin-left: 200px;
 }
-
 .centre-card-nr{
    display: flex;
   justify-content: center;
@@ -583,9 +582,7 @@ h3.heading {
   flex-direction: row;
   margin-left: 200px;
 }
-.centerify{
 
-}
 .light {
    background-color: rgba(255, 255, 255, .75);
    padding: 5rem 0;
@@ -677,7 +674,6 @@ ul.social li a {
 ul.social li a:hover {
    color: #f2b58d;
 }
-
 /*============= SKILLS SECTION =============*/
 
 

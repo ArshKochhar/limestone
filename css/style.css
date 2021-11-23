@@ -169,8 +169,8 @@ button, a, a.btn,
 }
 
 .events-dark {
-   background-image: url('../img/events1.jpg');
-  /* filter: blur(0.5px);*/
+   background-image: url('../img/success1.jpg');
+   filter: blur(0.1px);
    position: fixed;
    height: 100%;
    width: 100%;
@@ -197,7 +197,6 @@ button, a, a.btn,
    display: table;
 }
 
-
 .pitches{
    background-image: url('../img/goodes.jpg');
    filter: blur(2px);
@@ -211,9 +210,6 @@ button, a, a.btn,
    will-change: transform;
    display: table;
 }
-
-
-
 
 /*-- Landing Page Caption --*/
 .caption {
@@ -240,6 +236,37 @@ button, a, a.btn,
    padding: .8rem 1.5rem;
    font-size: 1.1rem;
 }
+
+/*-- Landing Page Caption --*/
+.caption-events {
+   position: absolute;
+   top: 20%;
+   width: 100%;
+   max-width: 100%;
+   bottom: 0;
+}
+
+.caption-events-header {
+   height: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #f78a40;
+}
+
+.caption-events-upcoming {
+   background-color: white;
+   color: #000000;
+   height: 75%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
+.caption-events-upcoming div {
+   display: block;
+}
+
 
 /*-- Bouncing Down Arrow --*/
 .arrow {

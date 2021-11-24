@@ -169,6 +169,20 @@ button, a, a.btn,
 }
 
 .events-dark {
+   background-image: url('../img/events1.jpg');
+   filter: blur(0.1px);
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   display: table;
+}
+
+.events-back {
    background-image: url('../img/success1.jpg');
    filter: blur(0.1px);
    position: fixed;
